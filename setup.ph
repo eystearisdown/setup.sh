@@ -1,1 +1,2 @@
-echo "y" | pkg install tsu && pkg update && pkg upgrade -y && termux-setup-storage && pkg install python -y && pkg install python-pip -y && pip install Flask requests beautifulsoup4 discord-webhook wget colorama tabulate psutil && pkg install sqlite -y
+#!/bin/bash
+termux-setup-storage && yes | pkg update && yes | pkg upgrade && yes | pkg i python && yes | pkg i android-tools && yes | pkg i python-pip && pip install requests psutil prettytable
